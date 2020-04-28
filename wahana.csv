@@ -1,0 +1,21 @@
+ID_Wahana,Nama_Wahana,Harga_Tiket,Batasan_Umur,Batasan_Tinggi
+IST001,Istana Boneka,50000,anak-anak,tanpa batasan
+FER002,Ferris Wheel,70000,semua,tanpa batasan
+RAF003,Rafting,90000,dewasa,>=170 cm
+MER004,Merry Go Round,60000,semua,tanpa batasan
+ROL005,Roller Coaster,80000,semua,>=170 cm
+TOR006,Tornado,80000,semua,>=170 cm
+RUK007,Rumah Kaca,60000,semua,tanpa batasan
+RUH008,Rumah Hantu,70000,dewasa,tanpa batasan
+BUM009,Bumper Car,80000,semua,tanpa batasan
+FLY010,Flying Fox,80000,semua,>=170 cm
+GYR011,Gryo Tower,90000,dewasa,>=170 cm
+KID012,Kiddie Ride,60000,anak-anak,tanpa batasan
+MEG013,Mega Water Slide,70000,semua,>=170 cm
+THE014,4D Theatre,90000,semua,tanpa batasan
+PLA015,Plane Simulator,100000,semua,tanpa batasan
+KAM016,Kamikaze,80000,dewasa,>=170 cm
+FIS017,Fish Catcher,60000,semua,tanpa batasan
+VOL018,Volcano Ride,70000,semua,tanpa batasan
+JUR019,Jurrasic Park,70000,semua,tanpa batasan
+CHO020,Chocolate Adventure,80000,semua,tanpa batasan
