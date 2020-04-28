@@ -8,7 +8,7 @@ import enkripsi
 import signup
 import r3fund
 import caripemain
-import kritiksaran
+import kritikdansaran
 import menggunakantiket
 import exit
 import lihat_laporan
@@ -73,7 +73,7 @@ while (masukan != '15'):
     elif (masukan == '5' and datauser[5] == 'Pemain'):
         (user,kepemilikan,datauser,refund) = r3fund.uangkembali(user,wahana,datauser,kepemilikan,refund)
     elif (masukan == '6' and datauser[5] == 'Pemain'):
-        kritiksaran = kritiksaran.kritiksaran1(datauser, kritiksaran)
+        kritiksaran = kritikdansaran.kritiksaran1(datauser, kritiksaran)
     elif (masukan == '5' and  datauser[5] == 'Admin'):
         lihat_laporan.lihat_laporan(datauser,kritiksaran)
     elif (masukan == '6' and  datauser[5] == 'Admin'):
@@ -86,13 +86,15 @@ while (masukan != '15'):
         tiket_pemain.tiketpemain(datauser, wahana, kepemilikan)
     elif (masukan == '10' and  datauser[5] == 'Admin'):
         user = goldenaccount.upgrade(datauser,user)
-
+    elif (masukan == '7' and datauser[5] == 'Pemain') or (masukan == '11' and datauser[5] == 'Admin'):
+        exit.exit(user,wahana,pembelian,penggunaan,kepemilikan,refund,kritiksaran,savefile)
     #### INTERNAL DEBUG PURPOSE, DELETE AFTER DONE
     elif (masukan == '0'):
         print(datauser)
         print(user)
         print(pembelian)
         print(kepemilikan)
+        print(kritiksaran)
     print()
     if(datauser[5] == 'Pemain'):
         print('')
@@ -120,6 +122,3 @@ while (masukan != '15'):
         print('11. exit')
     masukan = input('Masukkan nomor fitur yang diinginkan: ')
     print('')
-
-if (masukan == '7' and datauser[5] == 'Pemain') or (masukan == '11' and datauser[5] == 'Admin'):
-    exit.exit(user,wahana,pembelian,penggunaan,kepemilikan,refund,kritiksaran,savefile)

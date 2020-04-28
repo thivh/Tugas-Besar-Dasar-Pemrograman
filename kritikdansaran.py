@@ -10,13 +10,12 @@ def kritiksaran1(datauser, kritiksaran):
         b= input('Masukkan tanggal pelaporan: ')
         c= input('Kritik/saran Anda: ')
         i = 0
-        while (kritiksaran1[i] != ''):
+        while (kritiksaran[i] != ''):
             i = i + 1
         #kritik dan saran dari pengguna membentuk array baru
         print(i)
-        kritiksaran1[i] = [datauser[3],b,a,c]
+        kritiksaran[i] = [datauser[3],b,a,c]
         print()
         print('Kritik dan saran Anda kami terima.')
-        
-    return kritiksaran1(kritiksaran)
 
+    return kritiksaran

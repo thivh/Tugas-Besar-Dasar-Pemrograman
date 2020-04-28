@@ -7,7 +7,5 @@ def exit(user,wahana,pembelian,penggunaan,kepemilikan,refund,kritiksaran,savefil
         savefile.save(user,wahana,pembelian,penggunaan,kepemilikan,refund,kritiksaran)
     else: #opsi == 'N'
         print('Data tidak disimpan')
-        
-    return
 
-
+    quit()
