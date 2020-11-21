@@ -88,7 +88,13 @@ while (masukan != '15'):
         user = goldenaccount.upgrade(datauser,user)
     elif (masukan == '7' and datauser[5] == 'Pemain') or (masukan == '11' and datauser[5] == 'Admin'):
         exit.exit(user,wahana,pembelian,penggunaan,kepemilikan,refund,kritiksaran,savefile)
-
+    #### INTERNAL DEBUG PURPOSE, DELETE AFTER DONE
+    elif (masukan == '0'):
+        print(datauser)
+        print(user)
+        print(pembelian)
+        print(kepemilikan)
+        print(kritiksaran)
     print()
     if(datauser[5] == 'Pemain'):
         print('')

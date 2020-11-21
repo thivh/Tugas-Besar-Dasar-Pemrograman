@@ -15,11 +15,11 @@ def topup(datauser,user):
                 ketemu = True
             else: #belom ditemukan
                 i = i + 1
-
+        
         if (ketemu == True):
             saldo_baru = str(int(user[i][6]) + topup)
             user[i][6] = saldo_baru
-            print('Top up berhasil. Saldo',user[i][0],'bertambah menjadi',user[i][6])
+            print('Top up berhasil. Saldo Willy Wangky bertambah menjadi',user[i][6])
         else: #ketemu = False
             print('username tidak ditemukan')
 
@@ -27,3 +27,4 @@ def topup(datauser,user):
         print('Hanya admin yang dapat melakukan aksi ini!')
 
     return (user,datauser)
+                
